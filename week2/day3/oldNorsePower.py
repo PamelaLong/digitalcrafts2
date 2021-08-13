@@ -29,36 +29,46 @@ class BlockingMoves(Characters):
 
 choose_character = input("Press H to play the Hero Thor \nPress V to play the Villian Loki \nPress Q to quit \n")
 
-if choose_character == "H" or "h":
+health = 30
+while True:
+    if health == 0:
+        print (f"Your {health} has fallen to 0, you can no longer fight! Go hug your brother")
+        break
+    else:
+        print(f"You have chosen the Hero Thor! Your weapon is your hammer, Mjollnir \nYour health is at 30")
+
+if choose_character.lower == "H":
     print ("You have chosen the Hero Thor! Your weapon is your hammer, Mjollnir \nYour health is at 100%")
     print ("Press 1 to summon Thunder and Lightening \nPress 2 to swing your hammer")
     print ("Press 3 to block opponent \nPress 4 to check your Godlike Strength \n")
 
 hero_character = input ("1" or "2" or "3" or "4")
-health = 100
+
 if hero_character == "1":
-        print ("You have summoned Thunder and Lightening!! \n ")
+         print ("You have summoned Thunder and Lightening!! \n ")
 if (health > 0):
-        health = health - 10
-        print ("Keep Fighting!! \nLoki is full of mischief")
-else:
-    print ("You are out of health \nLoki now rules Asgard!")
-if hero_character == "2":
-    print ("You have chosen to swing with all your might!")
-    if (health > 0):
-        health = health - 10
-    print ("Keep Fighting!! \nLoki is full of mischief")
-else:
-    print ("You are out of health \nLoki now rules Asgard!")
+         health = health - 10
+         print ("Keep Fighting!! \nLoki is full of mischief")
+
+elif hero_character == "2":
+         print ("You have chosen to swing with all your might!")
+if (health > 0):
+         health = health - 10
+         print ("Keep Fighting!! \nLoki is full of mischief")
+
 if hero_character == "3":
-    print ("Blocking will get you nowhere!! \nYou must attack!")
-    if (health > 0):
-        health = health - 10
-    print ("Keep Fighting!! \nLoki is full of mischief")
+         print ("Blocking will get you nowhere!! \nYou must attack!")
+if (health > 0):
+         health = health - 10
+         print ("Keep Fighting!! \nLoki is full of mischief")
+
 if hero_character == "4":
-    print ("Do you need a break like the humans from Earth?!!")
+         print ("Do you need a break like the humans from Earth?!!")
+if (health > 0):
+         health = health - 10
+         print ("Keep Fighting!! \nLoki is full of mischief")
 else:
-    print ("You are out of health \nLoki now rules Asgard!")
+         print ("You are out of health \nLoki now rules Asgard!")
 
 
 
