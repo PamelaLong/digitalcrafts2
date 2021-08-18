@@ -1,0 +1,48 @@
+.red-box {
+    color: white;
+    height: 30px;
+    width: 30px;
+    background-color: red;
+    margin: 5px;
+  }
+  .flex {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid pink;
+    margin: 5px;
+  }
+  .grid {
+    display: grid;
+    grid-template-areas:
+    "header header header header header"
+    "sidebar body body body ad"
+    "sidebar body body body ad"
+    "sidebar body body body ad"
+    "footer footer footer footer footer";
+    grid-template-columns: 50px 1fr 1fr 1fr 50px;
+    grid-auto-rows: 60px 100px 100px 100px 60px;
+    border: 2px solid blue;
+    margin: 5px;
+  }
+.header {
+    grid-area: header;
+    background-color:pink;
+}
+.footer {
+    grid-area: header;
+    background-color: brown;
+}
+.body {
+    grid-area: header;
+    background-color: chartreuse;
+}
+.ad {
+    grid-area: header;
+    background-color: darkblue;
+}
+.sidebar {
+    grid-area: header;
+    background-color: darkkhaki;
+}
