@@ -27,11 +27,11 @@ class Items(Cart):
 input_list = input("Press 1 to add a Store \nPress 2 to add a List \nPress 3 to add an Item to a List \nPress 4 to view all Lists \nPress q to quit")
 operation = ("1" or "2" or "3" or "4")
 
-if input_list == "1":
-    nameOfStore =
-    addressOfStore =
-    store = Stores(nameOfStore, addressOfStore)
-    print(f"{nameOfStore} at {addressOfStore} has been added")
+#if input_list == "1":
+#    nameOfStore =
+#    addressOfStore =
+#    store = Stores(nameOfStore, addressOfStore)
+#    print(f"{nameOfStore} at {addressOfStore} has been added")
 
 
 
