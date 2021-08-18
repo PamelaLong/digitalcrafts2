@@ -1,6 +1,19 @@
-.Grid{
-    display: flex;
-    grid-auto-columns: 100vh;
-    justify-content: center;
-    margin: 10px;
+.photos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-auto-rows: 300px;
+    gap: 1rem;
+    /* height: auto;
+    width: auto; */
+
+}
+img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+@media screen and (max-width: 550px){
+    .photos{
+        grid-template-columns: 1fr;
+    }
 }
