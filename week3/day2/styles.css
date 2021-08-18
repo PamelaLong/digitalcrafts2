@@ -1,0 +1,41 @@
+.Layout {
+    justify-content: center;
+
+}
+.Header
+ {
+    justify-content: center;
+    background-color: blue;
+    height: 100px;
+    width: 1000px;
+
+}
+.Footer
+ {
+    background-color: blue;
+    height: 100px;
+    width: 1000px;
+    justify-content: flex-end;
+
+}
+.Content
+{
+    background-color: orange;
+    height: 800px;
+    width: 500px;
+    align-items: center;
+}
+.Menu
+ {
+    background-color: plum;
+    border: 5px solid black;
+    height: 800px;
+    width: 250px;
+}
+.ads
+ {
+    background-color: beige;
+    border: 5px solid black;
+    height: 800px;
+    width: 250px;
+}
