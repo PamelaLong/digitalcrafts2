@@ -1,0 +1,16 @@
+.form-styles {
+    display: flex;
+    height: 120px;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.text-input {
+    width: 200px;
+    background-color: #ff7100;
+
+    padding-left: 14px;
+    padding-right: 5px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-bottom: 10px;
+}
