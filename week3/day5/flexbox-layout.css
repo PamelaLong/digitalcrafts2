@@ -1,0 +1,34 @@
+.Flexbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 5px solid blue;
+    height: 1030px;
+    width: 1400px;
+    text-align: center;
+
+}
+.Header {
+    border: 5px solid orange;
+    height: 100px;
+    width: 1390px;
+
+}
+.Sidebar {
+    border: 5px solid black;
+    height: 800px;
+    width: 300px;
+
+}
+.Content {
+    border: 5px solid purple;
+    height: 700px;
+    width: 975px;
+
+}
+.Footer {
+    border: 5px solid red;
+    height: 100px;
+    width: 1390px;
+
+}
