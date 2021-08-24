@@ -9,17 +9,29 @@
 //Tip Calculator
 
 
-function tipAmount(billAmount, levelOfService) {
-    For (levelOfService) = [good, fair, poor];
+// function tipAmount(billAmount, levelOfService) {
+//     let (levelOfService) = [good, fair, poor];
+//     let (billAmount) = [100];
 
-    if (levelOfService) [good, {
-        return(`${billAmount} * 20/100, ${levelOfService}`)
+//     if (levelOfService) = [good] {
+//         return('${billAmount} , good')
+//     }
+//     if (levelOfService) = [fair] {
+//         return('${billAmount} , fair')
+//     }
+//     if (levelOfService) = [poor] {
+//         return('${billAmount} , poor')
+//     }
+//     }
+//     console.log (biilAmount, levelOfService)
+
+//Tip Calculator 2
+
+function totalAmount (billAmount, levelOfService){
+    let (levelOfService) = [good, fair, poor];
+    let (billAmount) = [100];
+
+    if (levelOfService) = [good] {
+        return 
     }
-    else if (levelOfService) fair, {
-        return(`${billAmount} * 15/100, ${levelOfService}`)
-    }
-    else if (levelOfServic) poor, {
-        return(`${billAmount} * 10/100, ${levelOfService}`)
-    }]
 }
-console.log (tipAmount ("100", "good"))
