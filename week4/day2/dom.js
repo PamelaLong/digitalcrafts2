@@ -1,9 +1,13 @@
+
 function alertMe(){
 const container = document.querySelector(".container1");
-const todo = document.createElements("li");
+const todo = document.createElement(".submitButton");
 todo.innerHTML = valueOfInputs;
 container.append(todo);
 }
-function successMessage(){
-    alert("list has been updated")
-}
+
+addEventListener("click", () => {
+    successMessage();
+    alertMe();
+    console.log("Item added to ToDo list");
+});
