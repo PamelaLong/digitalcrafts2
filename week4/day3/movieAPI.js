@@ -4,11 +4,11 @@ const ombdPage = "http://www.omdbapi.com/?apikey=[d032f16a]";
 const container = document.querySelector(".movieContainer");
 const search = document.querySelector(".search movies");
 
-function searchMovies(){
+async function searchMovies(){
     const movieContainer = document.querySelector(".input");
-    const fetchMovies = await fetch(ombdPage);
+    const fetchMovies = await fetch(ombdPage, {input});
     const json = await fetch(fetchMovies.json);
     const movieposts = document.createElement(".img");
 
-console.fetchMovies(ombdMovies.search);
+console.log(ombdMovies.search);
 }
