@@ -1,10 +1,35 @@
 h1{
-    color: gray;
+    color: darkblue;
     text-align: center;
+    align-items: center;
+}
+.city{
+    display:flex;
+    color: lightblue;
+    background-color: darkblue;
+    height: 25px;
+    width: 200px;
+    align-items: center;
+    margin: auto;
 }
 .search{
-    color: black;
-    background-color: darkturquoise;
-    margin: center;
-
+    display:flex;
+    color: lightblue;
+    background-color:darkblue;
+    height: 25px;
+    width: 125px;
+    align-items: center;
+    margin: auto;
+}
+.tempcontainer{
+    display: block;
+    color:darkblue;
+    column-span: "\00B0";
+}
+body{
+    background-color: olivedrab;
+    background-repeat: no-repeat, repeat;
+    background-position: center;
+    background-size: cover;
+    height: fit-content;
 }
