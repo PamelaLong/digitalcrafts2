@@ -7,7 +7,7 @@ const jsonweather = await data.json();
 
 const temp = document.createElement("p");
 console.log(jsonweather.main.temp);
-temp.innerHTML = jsonweather.main.temp;
+temp.innerHTML = (jsonweather.main.temp)
 const tempContainer = document.querySelector(".tempContainer");
     tempContainer.append(temp);
 }
