@@ -11,7 +11,13 @@ async function searchSpirits(){
     const jsonSpirits = await fetchSpirits.json();
     console.log(jsonSpirits);
 }
-for (const Spirits of jsonSpirits) {
-    // select a container to hold the spirits
+for (const Spirits of jsonSpirits.search) {
+    // select a container to hold the spirits and name it
+    const allSpirits = document.querySelector(".mainSpirits");
+    // make a box for the new element
+    const spirits = document.createElement("div")
+    // space for the image of the spirits
+    const spiritImage = document.createElement("img");
+    console.log(spirits);
 
 }
