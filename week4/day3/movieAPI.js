@@ -1,5 +1,5 @@
 const myAPIKey = "d032f16a";
-const ombdPage = `http://www.omdbapi.com/?apikey=${myAPIKey}`;
+const ombdPage = `http://img.omdbapi.com/?apikey=${myAPIKey}`;
 
 const container = document.querySelector(".moviePosters");
 const search = document.querySelector(".search");
@@ -11,15 +11,14 @@ async function searchMovies(){
 
 
 for (const movie of jsonMovies.search) {
+    const movieContainer = document.createElement("div");
     const moviePosters = document.createElement("img");
     console.log(moviePosters)
-    const movieTitle = document.createElement("h2")
-    moviePosters.src = movie.moviePosters;
-    movieTitle.innerText = movieTitle;
-    movieContainer.append(moviePosters);
-    movie.append(movieTitle, moviePosters);
-    movieContainer.append(movie);
 
-    
+    movieContainer.append(movie);
+    movie.append(movieTitle, moviePosters);
 }
 }
+search.addEventListener("click", (search) => {
+
+});

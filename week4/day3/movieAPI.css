@@ -1,7 +1,29 @@
 h1{
-    color:orangered;
+    color: orangered;
+    text-align: center;
+    align-items: center;
+}
+.input{
+    display:flex;
+    height: 30px;
+    width: 200px;
+    font-size: 25px;
+    align-items: center;
+    margin: auto;
+
 }
 .search{
-    color:orangered;
-    background-color: black;
+    display: flex;
+    color: orangered;
+    background-color:black;
+    height: 40px;
+    width: 144px;
+    font-size: 20px;
+    align-content: center;
+    margin: auto;
+}
+.moviePosters{
+    height: 500px;
+    width: 400px;
+
 }
