@@ -5,7 +5,7 @@ const input = document.querySelector(".input");
 const search = document.querySelector(".search");
 
 // make your function make sense
-async function searchMovies(){
+async function searchSpirits(){
     const userInput = input.value;
     const fetchSpirits = await fetch(theCocktailDB + `${userInput}`);
     const jsonSpirits = await fetchSpirits.json();
@@ -13,5 +13,5 @@ async function searchMovies(){
 }
 for (const Spirits of jsonSpirits) {
     // select a container to hold the spirits
-    
+
 }
