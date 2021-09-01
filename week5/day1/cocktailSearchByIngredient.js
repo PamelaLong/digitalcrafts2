@@ -15,6 +15,7 @@ async function searchSpirits(){
 const allSpirits = document.querySelector(".mainSpirits");
 allSpirits.innerHTML = ""
 
+
 for (const Spirits of jsonSpirits.drinks) {
     // make a box for the new element: spirits
     const spiritsBox = document.createElement("div")

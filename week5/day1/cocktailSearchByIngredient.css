@@ -1,8 +1,9 @@
-h1{
-    color: blueviolet;
+/* h1{
+    display: flex;
+    color: palegreen;
     text-align: center;
-    align-items: center;
-}
+    
+} */
 .input{
     display:flex;
     color: palegreen;
@@ -22,4 +23,13 @@ h1{
     font-size: 20px;
     margin: auto;
 
+}
+  
+.mainSpirits {
+    display: grid;
+    background-color: linear-gradient(blueviolet, palegreen);
+    position: auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 50px;
 }
