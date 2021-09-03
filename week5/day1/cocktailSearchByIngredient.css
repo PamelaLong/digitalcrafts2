@@ -33,8 +33,10 @@ h1{
     font-size: 30px;
 }
 
-@media screen and (max-width: 100px){
+@media screen and (max-width: 500px){
     .mainSpirits{
+        width: 100vw;
+        height: 90vh;
         grid-template-columns: 1fr;
     }
 }
