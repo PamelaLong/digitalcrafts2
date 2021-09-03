@@ -15,10 +15,11 @@
 .header
  {
     height: 75px;
-    width: 100%;
+    width: 75%;
     text-align: center;
+    /* align-content: center; */
     font-size: 50px;
-    border-radius: 5px;
+    border-radius: 35px;
     color:greenyellow;
     font-family:'Gill Sans';
     margin-bottom: 15px;
@@ -28,11 +29,11 @@
 .brunch
 {
     height: 75px;
-    width: 100%;
+    width: 50%;
     text-align: center;
     margin: 0;
-    border-radius: 5px;
-    background-color: blue;
+    border-radius: 15px;
+    background-color: orangered;
     color: white;
     font-size: 50px;
     font-family:'Gill Sans';
@@ -42,11 +43,11 @@
 .dinner
 {
     height: 75px;
-    width: 100%;
+    width: 50%;
     text-align: center;
     margin: 0;
-    border-radius: 5px;
-    background-color: blueviolet;
+    border-radius: 15px;
+    background-color: blue;
     color: white;
     font-size: 50px;
     font-family:'Gill Sans';
@@ -55,11 +56,11 @@
 .nightcap
 {
     height: 75px;
-    width: 100%;
+    width: 50%;
     text-align: center;
     margin: 0;
-    border-radius: 5px;
-    background-color: forestgreen;
+    border-radius: 15px;
+    background-color: blueviolet;
     color: white;
     font-size: 50px;
     font-family:'Gill Sans';
@@ -72,14 +73,14 @@ li{
 .footer
  {
     height: 25px;
-    width: 100%;
+    width: 75%;
     /* position: absolute;
     bottom: 0; */
     color:black;
     font-size: 15px;
-    border-radius: 5px;
 }
 h3{
     background-color:palegreen;
     width: 140px;
+    border-radius: 35px;
 }
