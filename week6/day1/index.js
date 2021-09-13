@@ -8,7 +8,7 @@
 // app.get("/helloWorld", (req, res) => {
 //     res.send((console.log("/helloWorld")));
 // })
-// app.listen(3000, console.log("Hello World!"));
+// app.listen(5500, console.log("Hello World!"));
 // console.log(
 //     cowsay.think({
 //     text: "Hello World!",
@@ -24,7 +24,7 @@
 // app.get("/cats",(req, res) => {
 //     res.send((console.log("/cats")));
 // })
-// app.listen(3000, console.log("Meow"));
+// app.listen(5500, console.log("Meow"));
 
 
 //third one:
@@ -36,7 +36,7 @@
 // app.post("/dogs",(req, res) => {
 //     res.send((console.log("/dogs")));
 // })
-// app.listen(3000, console.log("Woof"));
+// app.listen(5500, console.log("Woof"));
 
 //forth one:
 // const cowsay = require("cowsay");
@@ -47,7 +47,7 @@
 // app.post("/cats_and_dogs",(req, res) => {
 //     res.send((console.log("/cats_and_dogs")));
 // })
-// app.listen(3000, console.log("Dogs and cats living together...mass hysteria!!"));
+// app.listen(5500, console.log("Dogs and cats living together...mass hysteria!!"));
 
 const express = require("express");
 const app = express();
