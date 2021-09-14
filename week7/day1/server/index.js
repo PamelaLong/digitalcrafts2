@@ -4,6 +4,7 @@ const creds = require("./db");
 
 const PORT = 3006;
 
+app.use(express.json());
 //middleware
 
 // app.get("/getUserData", (req, res) => {
@@ -31,7 +32,7 @@ app.post("/getUserData", (req, res) => {
             return console.error("Error getting connected to the client", err.stack);
         }
     
-    client.query`(INSERT INTO users (id,name,tempId), VALUES ('${req.body.id}','${req.body.name}','${req.body.tempId}')`, (err, result) => {
+    client.query`(INSERT INTO users (id,name,tempid), VALUES ("${req.body.id}","${req.body.name}","${req.body.tempid}")`, (err, result) => {
         if (err) {
             res.status(400).send(err.stack);
         }
