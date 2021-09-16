@@ -22,7 +22,7 @@ function alertMe(){
     }
     
     
-    const userData =document.querySelector(".userInput"), value;
+    const userData =document.querySelector(".userInput") .value;
     const createUserData = async () => {
         const URL = ("http://localhost:5500/create_todos");
     const create_todos = await fetch(URL,{
@@ -36,7 +36,6 @@ function alertMe(){
         successMessage();
         alertMe();
         getUserData();
-
         console.log("Item added to ToDo list");
     })
 };
