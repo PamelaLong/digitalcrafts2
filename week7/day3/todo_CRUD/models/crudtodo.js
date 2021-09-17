@@ -3,7 +3,7 @@ const {
   Model
 } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
-  class CRUDtodo extends Model {
+  class CRUDtodos extends Model {
     /**
      * Helper method for defining associations.
      * This method is not a part of Sequelize lifecycle.
@@ -13,11 +13,11 @@ module.exports = (sequelize, DataTypes) => {
       // define association here
     }
   };
-  CRUDtodo.init({
+  CRUDtodos.init({
     LISTtodo: DataTypes.TEXT
   }, {
     sequelize,
-    modelName: 'CRUDtodo',
+    modelName: 'CRUDtodos',
   });
-  return CRUDtodo;
+  return CRUDtodos;
 };

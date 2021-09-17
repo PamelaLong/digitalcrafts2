@@ -2,7 +2,7 @@ function alertMe(){
     const userList = document.querySelector(".user-list");
     const submitButton = document.querySelector(".submit");
     const readUserData = () => {
-        const URL = ("http://localhost:5500/create_todos");
+        const URL = ("http://localhost:3000/create_todos");
         const userData = fetch(URL, {
             method: "POST",
             mode: "cors",
@@ -13,7 +13,7 @@ function alertMe(){
     }
     const json = userData.json();
 
-    for (const iterator of json) {
+    for (const userData of json) {
         const userInput = user.userInput
         const userDetails = document.createElement("p");
         userInput.innerHTML = userInput;
@@ -24,7 +24,7 @@ function alertMe(){
     
     const userData =document.querySelector(".userInput") .value;
     const createUserData = async () => {
-        const URL = ("http://localhost:5500/create_todos");
+        const URL = ("http://localhost:3000/create_todos");
     const create_todos = await fetch(URL,{
         method: "POST",
         headers: {
