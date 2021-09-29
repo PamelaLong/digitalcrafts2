@@ -1,0 +1,18 @@
+.Card {
+display: flexbox;
+text-align: center;
+border: 5px;
+border-color: blue;
+
+};
+
+.CardContainer {
+display: flex;
+justify-content: center;
+flex-direction: row;
+flex-wrap: wrap;
+border: 5px;
+border-color: crimson;
+
+};
+
