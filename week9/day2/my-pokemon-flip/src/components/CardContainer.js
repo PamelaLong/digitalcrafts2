@@ -208,13 +208,15 @@ class CardContainer extends Component {
         };
 
     render() {
-        const allPokemon = this.state.pokemonStat;
-        console.log(allPokemon);
+        const pokemonStat = this.state.pokemonStat;
+        console.log(pokemonStat);
 
         return (
             <div className='CardContainer'>
-                {allPokemon.map((pokemon) => (
-                <Card/>),
+              <li className="pokemonStat" key={pokemonStat.id}></li>
+                {pokemonStat.map((pokemon) => (
+                
+                <Card pokemon = {pokemon}/>),
             )};
             </div>
         )
