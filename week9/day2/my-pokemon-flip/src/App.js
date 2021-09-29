@@ -1,5 +1,7 @@
 
 import CardContainer from './components/CardContainer';
+// import Card from './components/Card';
+
 function App() {
       
   // const flipPokemon = () => {
