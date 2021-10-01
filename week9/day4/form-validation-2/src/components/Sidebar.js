@@ -8,11 +8,11 @@ export default function Sidebar() {
             <SidebarContainer>
                 <p>Sidebar</p>
             <div>
-                <li>Bacon Cheeseburger</li>
-                <li>Ribeye</li>
-                <li>BBQ Chicken</li>
-                <li>Brownie Cheesecake</li>
-                <li>Chocolate Chip Cookies</li>
+                <p>Bacon Cheeseburger</p>
+                <p>Ribeye</p>
+                <p>BBQ Chicken</p>
+                <p>Brownie Cheesecake</p>
+                <p>Chocolate Chip Cookies</p>
             </div>
             </SidebarContainer>
         )

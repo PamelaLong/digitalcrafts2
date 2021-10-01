@@ -1,17 +1,16 @@
 import React, { useState } from 'react';
-import { UserButton, HeaderTitle, HeaderContainer } from '../styled-components/HeaderStyle';
+import { HeaderTitle, HeaderContainer } from '../styled-components/HeaderStyle';
 
 export default function Header() {
-    const [counter, setCounter] = useState(0)
-    const [user, setUser] = useState({})
+    const user = useState({})
     
 
 
         return (
             <HeaderContainer>
-                <HeaderTitle>User Has Logged In</HeaderTitle>
+                <HeaderTitle>User Has Logged In
                 <p>Welcome {user?.name?.first} {""} {user?.name?.last}</p>
-                <UserButton onClick={() => setCounter(counter + 1)}>Get New User</UserButton>
+                </HeaderTitle>
             </HeaderContainer>
         );
     };

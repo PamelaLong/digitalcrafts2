@@ -11,9 +11,9 @@ export default function Form() {
                 <input onChange={(e) => setFormData({ ...formData, [e.tartget.name]: e.target.value })} type="text" placeholder= "email" name="email" value={formData?.email} />
                 <input onChange={(e) => setFormData({ ...formData, [e.tartget.name]: e.target.value })} type="password" placeholder= "password" name="password" value={formData?.password} />
                 
-                <div>
+                <p>
                     <input type="submit" />
-                </div>
+                </p>
             </div>
         );
     };
