@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
-export const formData = styled.div`
+export const MainContainer = styled.div`
 height: 400px;
-margin: auto;
+
 
 `
