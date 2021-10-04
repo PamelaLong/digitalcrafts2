@@ -2,30 +2,31 @@ import React from 'react'
 import {SidebarContainer} from '../styled-components/SidebarStyle';
 import { Link } from "react-router-dom";
 
-export default function Sidebar(props) {
-    const viewSidebar = props.viewSidebar;
+export default function Sidebar() {
 
         return (
-            <>
-            {viewSidebar ? (
+    
             <SidebarContainer>
             
                 <Link to="/">
                 <p>Home</p>
                 </Link>
                 
-                <Link to="/dashboard">
+                <Link to="/Dashboard">
                 <p>Dashboard</p>
                 </Link>
                 
-                <Link to="/form">
-                <p>Form</p>
+                <Link to="/Login">
+                <p>Login</p>
+                </Link>
+
+                <Link to="/Account">
+                <p>Account</p>
+                </Link>
+
+                <Link to="/Garage">
+                <p>Garage</p>
                 </Link>
         
             </SidebarContainer>
-        ) : (
-            <></>
         )}
-        </>
-        );
-};

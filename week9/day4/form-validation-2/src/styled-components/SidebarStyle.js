@@ -1,11 +1,13 @@
 import styled from "styled-components"
 
 export const SidebarContainer = styled.div`
-
-background-color: black;
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: orange;
 color: red;
-height: 650px;
-width: 250px;
-text-align: left;
-
+font-size: 30px;
+width: 100%;
+max-width: 200px;
+max-height: auto;
 `

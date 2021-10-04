@@ -1,9 +1,10 @@
 import React from 'react'
+import { DashboardContainer } from '../styled-components/DashboardStyle'
 
 export default function Dashboard() {
     return (
-        <div>
-            <h1>Dashborad</h1>
-        </div>
+        <DashboardContainer>
+            Dashboard
+        </DashboardContainer>
     )
 }

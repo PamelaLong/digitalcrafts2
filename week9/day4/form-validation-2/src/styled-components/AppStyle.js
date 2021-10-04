@@ -1,7 +1,9 @@
 import styled from "styled-components"
 
 export const MainContainer = styled.div`
-height: 400px;
+display: grid;
+height: 100vh;
+width: 100vw;
 
 
 `
