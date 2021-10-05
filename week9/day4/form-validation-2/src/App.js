@@ -5,8 +5,9 @@ import Home from './components/Home';
 import Account from './components/Account';
 import Garage from './components/Garage';
 import Dashboard from './components/Dashboard';
-import ErrorPage from './components/ErrorPage';
-import Redirect from './components/ErrorPage';
+import Body from './components/Home';
+// import ErrorPage from './components/ErrorPage';
+// import Redirect from './components/ErrorPage';
 import { MainContainer } from './styled-components/AppStyle';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 // import { useState } from 'react';
@@ -20,7 +21,7 @@ function App() {
       <MainContainer>
         <Header/>
         <Sidebar/>
-        
+        <body></body>
         <Route exact path="/">
           <Home/>
         </Route>
@@ -41,13 +42,13 @@ function App() {
           <Garage/>
         </Route>
 
-        <Route path="*">
+        {/* <Route path="*">
           <Redirect to="/errorpage" />
         </Route>
         <Route path="/errorpage">
           <ErrorPage />
-        </Route>
-        
+        </Route> */}
+      
       </MainContainer>
       </Switch>
       </Router>

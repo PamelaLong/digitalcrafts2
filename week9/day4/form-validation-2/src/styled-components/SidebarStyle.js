@@ -5,9 +5,10 @@ display: flex;
 flex-direction: column;
 align-items: center;
 background-color: orange;
-color: red;
+color: darkblue;
 font-size: 30px;
 width: 100%;
+height: auto;
 max-width: 200px;
-max-height: auto;
+max-height: fit-content;
 `

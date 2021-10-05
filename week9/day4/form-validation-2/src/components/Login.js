@@ -1,20 +1,25 @@
 import React, { useState } from 'react';
+import { LoginContainer } from '../styled-components/LoginStyle';
 
 export default function Login() {
     const [loginData, setLoginData] = useState({});
 
         return (
-            <div>
-                <p>Login to Continue</p>
+            <LoginContainer>
+                <div>
+                <p>Login to Continue!</p>
                 
-                <p><input onChange={(e) => setLoginData({ ...loginData, [e.tartget.name]: e.target.value })} type="text" placeholder= "username" name="username" value={loginData?.username} /></p>
-                <p><input onChange={(e) => setLoginData({ ...loginData, [e.tartget.name]: e.target.value })} type="password" placeholder= "password" name="password" value={loginData?.password} /></p>
-                <p><button>Remember Me</button></p>
-                <p><button>Login</button></p>
+                <div><input onChange={(e) => setLoginData({ ...loginData, [e.tartget.name]: e.target.value })} type="text" placeholder= "username" name="username" value={loginData?.username} /></div>
+                <div><input onChange={(e) => setLoginData({ ...loginData, [e.tartget.name]: e.target.value })} type="password" placeholder= "password" name="password" value={loginData?.password} /></div>
+                <div><input type="checkbox" value="lsRememberMe" id="rememberMe"></input>Remember Me</div>
 
-                <p>Forgot Your Password?</p>
-                <p>Not A Member? Sign Up</p>
-            </div>
+                    <p><button>Login</button></p>
+
+                <h6>Forgot Your Password?</h6>
+                </div>
+
+                <h6>Not A Member? Sign Up</h6>
+            </LoginContainer>
         );
     };
     
