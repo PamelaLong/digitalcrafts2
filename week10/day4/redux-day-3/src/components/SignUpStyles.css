@@ -1,0 +1,11 @@
+.form{
+    display: flex;
+    /* flex-direction: column; */
+
+};
+
+.signUpForm{
+    width: 400px;
+    margin-top: 40px;
+    flex-direction: column;
+};
