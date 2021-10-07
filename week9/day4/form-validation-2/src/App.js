@@ -5,7 +5,7 @@ import Home from './components/Home';
 import Account from './components/Account';
 import Garage from './components/Garage';
 import Dashboard from './components/Dashboard';
-import Body from './components/Home';
+// import Body from './components/Home';
 // import ErrorPage from './components/ErrorPage';
 // import Redirect from './components/ErrorPage';
 import { MainContainer } from './styled-components/AppStyle';
@@ -21,7 +21,7 @@ function App() {
       <MainContainer>
         <Header/>
         <Sidebar/>
-        <body></body>
+        
         <Route exact path="/">
           <Home/>
         </Route>
