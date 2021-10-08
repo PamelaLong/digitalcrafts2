@@ -15,7 +15,7 @@ export default function Dealership(props) {
             <p>{props.fordGT}</p>
             <p>{bugatti}</p>
             <p>{kawasaki}</p>
-            <button onClick={()=> dispatch({tyoe: "CHANGE_KAWASAKI"})}>Change Kawasaki</button>
+            <button onClick={()=> dispatch({type: "CHANGE_KAWASAKI"})}>Change Kawasaki</button>
         </div>
     )
 }
