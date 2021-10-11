@@ -1,27 +1,44 @@
-const initialState ={
-    firstName: "",
-    lastName: "",
-    email: "",
-    password: "",
+import { combineReducers } from "redux"
+import signUpFormData from "./signUpForm";
+import Counter from "./counter";
+import Matchups from "./matchUps";
+import CurrentLiveMatch from "./currentLiveMatch";
+import NewsArticles from "./newsArticles";
 
-};
+// const initialState ={
+//     firstName: "",
+//     lastName: "",
+//     email: "",
+//     password: "",
+//     matchups: [],
+//     currentLiveMatch: {},
+//     newsArticles: [],
+//     previousMatchVideos: [],
+//     userData: [],
+// };
 
-function rootReducer(state = initialState, action) {
-    switch (action.type){
-        case "SIGNUPFORM_FIRSTNAME":
-            return { ...state, firstName: action.payload };
+const rootReducer = combineReducers({
+    signUpFormData,
+    Counter,
+    Matchups,
+    CurrentLiveMatch,
+    NewsArticles,
+    // switch (action.type){
+    //     case "SIGNUPFORM_FIRSTNAME":
+    //         return { ...state, firstName: action.payload };
 
-        case "SIGNUPFORM_LASTNAME":
-            return { ...state, firstName: action.payload };
+    //     case "SIGNUPFORM_LASTNAME":
+    //         return { ...state, firstName: action.payload };
 
-        case "SIGNUPFORM_EMAIL":
-            return { ...state, firstName: action.payload };
+    //     case "SIGNUPFORM_EMAIL":
+    //         return { ...state, firstName: action.payload };
 
-        case "SIGNUPFORM_PASSWORD":
-            return { ...state, firstName: action.payload };
+    //     case "SIGNUPFORM_PASSWORD":
+    //         return { ...state, firstName: action.payload };
         
-        default: 
-        return state;
-    }
-}
+    //     default: 
+    //     return state;
+    // }
+
+});
 export default rootReducer;
