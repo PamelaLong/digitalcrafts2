@@ -12,12 +12,23 @@ import { MainContainer } from './styled-components/AppStyle';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 // import { useState } from 'react';
 
+
+
 function App() {
   // const [viewSidebar, setViewSidebar] = useState(true);
+// const [loggedIn, setLoggedIn] = useState(false);
+// const register = true;
+//only goes to dashboard when someone is logged in
 
+// const user = JSON.parse(localStorage.getItem("supabase.auth.token"));
   return (
     <Router>
       <Switch>
+
+      <Route path="/Login">
+          <Login/>
+        </Route>
+
       <MainContainer>
         <Header/>
         <Sidebar/>
@@ -28,10 +39,6 @@ function App() {
 
         <Route path="/Dashboard">
           <Dashboard />
-        </Route>
-
-        <Route path="/Login">
-          <Login/>
         </Route>
         
         <Route path="/Account">
