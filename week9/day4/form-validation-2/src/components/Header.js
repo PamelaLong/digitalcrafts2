@@ -36,15 +36,17 @@ export default function Header() {
     return () => {};
     },[counter, dispatch])
 
+    /* <p>Welcome {user?.name?.first} {""} {user?.name?.last}</p> */
 
     
 
         return (
+            <div>
             <HeaderContainer>
+                <p>Welcome</p>
                 <button onClick= {()=> setCounter(counter + 1)}>New User</button>
-                
-                {/* <p>Welcome {user?.name?.first} {""} {user?.name?.last}</p> */}
-                
             </HeaderContainer>
+            </div>
+            
         );
     };
