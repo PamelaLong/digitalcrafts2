@@ -5,8 +5,8 @@ import movieTitle from "./movieTitle";
 
 
 const rootReducers = combineReducers({
-    cart,
     movieAPI,
+    cart,
     movieTitle,
 
 }

@@ -1,11 +1,14 @@
-import React from 'react'
+const initialState = {
+    movieTitle: "",
+    poster: "",
 
-export default function movieTitle() {
-    return (
-        <div>
-            {movieTitle.map((movie) => (
-                <movieTitle movie = {movie} />
-            ))}
-        </div>
-    )
 }
+
+const movieTitle = (state = initialState, action) => {
+    switch (action.type) {
+        default:
+            return state;
+    }
+}
+
+export default movieTitle;
