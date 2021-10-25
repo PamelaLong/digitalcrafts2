@@ -1,6 +1,11 @@
 const initialState = {
-    movieTitle: "",
-    poster: "",
+    Title: "",
+    Year: "",
+    Rated: "",
+    Released: "",
+    Poster: "",
+    Ratings: "",
+    
 
 }
 

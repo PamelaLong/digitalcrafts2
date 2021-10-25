@@ -1,7 +1,7 @@
 import { combineReducers } from "redux";
 import movieAPI from "./movieAPI";
-import cart from "./cart";
 import movieTitle from "./movieTitle";
+import cart from "./cart";
 
 
 const rootReducers = combineReducers({
