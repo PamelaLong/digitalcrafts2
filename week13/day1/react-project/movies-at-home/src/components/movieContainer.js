@@ -2,21 +2,22 @@ import React from 'react';
 import movieTitle from './movieTitle';
 import { useSelector } from 'react-redux';
 
+const movieTitle = useSelector((state) => state.movieTitle);
+// props?
 
-
-export default function MovieContainer() {
+export default function movieContainer(props) {
     // const Poster = [];
-    const movieTitle = useSelector(state => state.movieTitle);
+    
 
+    // mapping movie poster titles?
 
     return (
         <div>
-            <h1>Movie Conatiner</h1>
-            {/* mapping movie poster titles */}
+            
             {movieTitle.map((movie) => (
                 <movieTitle movie = {movie} />
             ))}
 
         </div>
     )
-}
+};

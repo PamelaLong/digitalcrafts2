@@ -1,19 +1,15 @@
-import React from 'react'
+import { combineReducers } from "redux";
+import movieAPI from "./movieAPI";
+import cart from "./cart";
 
-const initialState = {
-    
+
+const rootReducers = combineReducers({
+    cart,
+    movieAPI,
+
 
 }
-
-
-
-function rootReducers(state = initialState) {
-    return (
-        <div>
-            
-        </div>
-    )
-}
+);
 
 export default rootReducers;
 
