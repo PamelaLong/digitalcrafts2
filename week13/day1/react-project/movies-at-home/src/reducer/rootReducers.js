@@ -1,12 +1,9 @@
 import { combineReducers } from "redux";
-import movieAPI from "./movieAPI";
 import movieTitle from "./movieTitle";
-import cart from "./cart";
+
 
 
 const rootReducers = combineReducers({
-    movieAPI,
-    cart,
     movieTitle,
 
 }
