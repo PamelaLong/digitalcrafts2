@@ -13,6 +13,9 @@ function App() {
 
   return (
     <div className= "Movie">
+      <div>
+      <script src="movieAPI.js"></script>
+      </div>
       <h1>Search Movies</h1>
       <input onChange={(e) => inputValue(parseInt(e.target.value))} type= "movie" />
       <button onClick={() => dispatch({type: "movieTitle"})}>Search</button>

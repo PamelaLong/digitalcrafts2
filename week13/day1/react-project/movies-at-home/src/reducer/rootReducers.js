@@ -18,5 +18,5 @@ export default rootReducers;
 
 // find where you are putting this or if you need to make another movieAPI.js file
 // movieAPI.js
-// const myAPIKey = "d032f16a&s=";
-// const ombdPage = `http://www.omdbapi.com/?apikey=${myAPIKey}`
+// const myAPIKey = "aa7e3de3";
+// const ombdPage = `https://www.omdbapi.com/?i=tt3896198&apikey=${myAPIKey}`
