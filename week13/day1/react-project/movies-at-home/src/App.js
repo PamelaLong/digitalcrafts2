@@ -1,28 +1,31 @@
 import './App.css';
 import { useState } from 'react';
 import { useDispatch } from "react-redux";
-import SignUp from "./components/SignUp";
-// import Movies from './components/Movies';
+import Signup from "./components/Signup";
+import Movies from './components/Movies';
 
 
-function App() {
+function App(props) {
   const inputValue = useState(0);
   const dispatch = useDispatch();
-  const [SignUpItem, setSignUpItem] = useState({});
-  // const [MoviesTitle, setMoviesTitle] = useSelector({});
-
+  const [SignupItem, setSignupItem] = useState({});
+  // const [movieTitle, setMovieTitle] = useSelector(state => state.movieTitle[props.movieTitle]);
+  // const [SignupItem, setSignupItem] = useSelector(state => state.Signup[props.Signup]);
   return (
     <div className= "App">
-      <h1>Sign Up To Order Movies</h1>
+      <h1>Welcome to Movies At Home</h1>
+      <h2>Sign Up To Order Movies</h2>
+      {/* <Movies />
+      <movieTitle /> */}
 
-        {/* <Movies MoviesTitle={MoviesTitle}
-        setMoviesTitle={setMoviesTitle}/> */}
+        {/* <Movies MovieTitle={movieTitle}
+        setMovieTitle={setMovieTitle}/> */}
 
-      <SignUp SignUpItem={SignUpItem}
-      setSignUpItem={setSignUpItem}/>
+      <Signup SignupItem={SignupItem}
+      setSignupItem={setSignupItem}/>
       
-      <input onChange={(e) => inputValue(parseInt(e.target.value))} type= "movie" />
-      <button onClick={() => dispatch({type: "movies"})}>Search</button>
+      {/* <input onChange={(e) => inputValue(parseInt(e.target.value))} type= "movie" /> */}
+      {/* <button onClick={() => dispatch({type: "movies"})}>Search</button> */}
       
     </div>
 
