@@ -1,12 +1,12 @@
 // import React from 'react'
 // import MovieContainer from "./movieContainer";
-// import Movies from "./Movies";
+import Movies from "./Movies";
 
 // FIX IT ALL!!
 
 
-const movieTitleDelete = async (movieTitle) => {
-    const deletemovieTitle = await fetch(`http://localhost:3001/delete_title/${movieTitle}`, {
+async function Cart() {
+    const deletemovieTitle = fetch(`http://localhost:3001/delete_title/${Movies}`, {
         method: "DELETE",
         mode: "cors",
         headers: {
@@ -19,12 +19,11 @@ const movieTitleDelete = async (movieTitle) => {
         // e.preventDefault
 
         deletemovieTitle(e.currentTarget.movieTitle)
-        const deleteDiv = document.querySelector(`#div-${movieTitle}`)
+        const deleteDiv = document.querySelector(`#div-${Movies}`)
         deleteDiv.parentNode.removeChild(deleteDiv)
 
 
-    }) 
-}
+    })
 
 const readmovieTitle= async () => {
     const omdbPage = `https://www.omdbapi.com/?i=tt3896198&apikey=aa7e3de3`;
@@ -34,7 +33,7 @@ const readmovieTitle= async () => {
         headers: {
             'Content-Type': 'application/json'
         }
-        
+
     });
 
 const json = await cartData.json();
@@ -69,3 +68,5 @@ const json = await cartData.json();
              
     }
 };
+};
+export default Cart;
