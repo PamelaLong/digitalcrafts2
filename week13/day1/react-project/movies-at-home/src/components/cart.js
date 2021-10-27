@@ -34,7 +34,8 @@ const readmovieTitle= async () => {
         headers: {
             'Content-Type': 'application/json'
         }
-    })
+        
+    });
 
 const json = await cartData.json();
     console.log(json)
