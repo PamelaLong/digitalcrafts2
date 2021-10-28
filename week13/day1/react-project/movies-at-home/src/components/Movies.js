@@ -2,31 +2,35 @@
 // import { useSelector } from 'react-redux';
 // const myAPIKey = "aa7e3de3";
 const omdbPage = `https://www.omdbapi.com/?i=tt3896198&apikey=aa7e3de3`;
-const input = "userInput";
-
+const input = document.querySelector(".userInput");
+const search = document.querySelector(".search");
 
 
 
 // const searchMovies = useSelector((state) => state.movies);
 
-export default async function Movies(props) {
+async function searchMovies() {
 
         const userInput = input.value;
-        const fetchMovies = await fetch(omdbPage + `${userInput}`);
+        const fetchMovies = await fetch(omdbPage + userInput);
         const jsonMovies = await fetchMovies.json();
-        // console.log(jsonMovies);
+        input.value = ""
 
-    for (const movie of jsonMovies.Search) {
+const allMovies = document.querySelector(".mainMovies");
+allMovies.innerHTML = ""
+
+    for (const movie of jsonMovies.search) {
         const movieContainer = document.querySelector(".movieContainer");
         const divForMovies = document.createElement("div");
         const movieImage = document.createElement("img");
-        movieImage.src = movie.Poster;
-        divForMovies.append(movieImage);
+        movieImage.src = movie.strPoster;
+        const movieTitle = document.createElement("p");
+        movieTitle.innerHTML = movie.strPoster;
+
+
+        divForMovies.append(movieImage, movieTitle);
         movieContainer.append(divForMovies);
-    return (
-        <div>
-            <h1>{props?.movies.title}</h1>
-        </div>
-    )
+
     }
-};
+}
+search.addEventListener("click", () => searchMovies())

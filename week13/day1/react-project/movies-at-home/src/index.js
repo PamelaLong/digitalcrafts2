@@ -7,7 +7,7 @@ import App from './App';
 import { createStore, applyMiddleware } from 'redux';
 import rootReducers from'./reducer/rootReducers';
 import { Provider } from 'react-redux';
-import Signup from './components/Signup';
+// import Signup from './components/Signup';
 // import Cart from './components/Cart';
 // import Movies from './components/Movies';
 // import MovieContainer from './components/MovieContainer';
@@ -23,10 +23,7 @@ ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
     <App />
-    <Signup />
-    {/* <Cart /> */}
-    {/* <Movies /> */}
-    {/* <MovieContainer /> */}
+    
 
     </Provider>
   </React.StrictMode>,
