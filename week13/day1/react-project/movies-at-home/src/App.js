@@ -3,7 +3,7 @@ import './App.css';
 // import { useDispatch } from "react-redux";
 // import Signup from "./components/Signup";
 import Movies from './components/Movies';
-
+import Marvel from './components/Marvel';
 
 export default function App() {
   // const [Signup, setSignup] = useState({});
@@ -15,6 +15,7 @@ export default function App() {
       <h1>Welcome to Movies At Home</h1>
       <h2>Search for Movies Here</h2>
       <Movies />
+      <Marvel />
 
 
         {/* <Movies MovieTitle={movieTitle}setMovieTitle={setMovieTitle}/> */}

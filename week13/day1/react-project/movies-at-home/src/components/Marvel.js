@@ -2,7 +2,7 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-const omdbPage = `http://www.omdbapi.com/?s=disney&apikey=aa7e3de3`;
+const omdbPage = `http://www.omdbapi.com/?s=marvel&apikey=aa7e3de3`;
 
 const responsive = {
     superLargeDesktop: {
@@ -24,31 +24,31 @@ const responsive = {
     }
 }
 
- function Movies() {
-    const [movies, setMovies] = useState([])
+ function Marvel() {
+    const [marvel, setMarvel] = useState([])
     useEffect(() => {
        
         async function getData() {
             const fetchMovies = await fetch(omdbPage);
             const jsonMovies = await fetchMovies.json();
             console.log(jsonMovies);
-            setMovies(jsonMovies);
+            setMarvel(jsonMovies);
             
         }
         getData()
     },[])
     return(
         <div>
-            <h1>movies</h1>
+            <h1>marvel</h1>
             {/* <Carousel responsive={responsive}> */}
                 
-            {movies?.Search?.map((movieData) => {
-                console.log(movieData)
-                return <img src={movieData.Poster} alt= ""/>
+            {marvel?.Search?.map((marvelData) => {
+                console.log(marvelData)
+                return <img src={marvelData.Poster} alt= ""/>
             })}
 
             {/* </Carousel> */}
         </div>
     )
 }
-export default Movies;
+export default Marvel;
