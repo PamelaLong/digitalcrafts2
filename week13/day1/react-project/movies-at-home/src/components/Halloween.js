@@ -1,10 +1,12 @@
-import React from 'react';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import HalloweenContainer from '../componentStyle/HalloweenStyle';
 const omdbPage = `http://www.omdbapi.com/?s=halloween&apikey=aa7e3de3`;
 
 
-function Halloween() {
-const [halloween, setHalloween] = useState([])
+export default function Halloween() {
+const [Halloween, setHalloween] = useState([])
+
+
 useEffect(() => {
        
         async function getHalloween() {
@@ -17,15 +19,16 @@ useEffect(() => {
         getHalloween()
     },[])
     return(
+        <HalloweenContainer>
         <div>
             <h1>Halloween</h1>
                 
-            {halloween?.Search?.map((halloweenData) => {
-                console.log(halloweenData)
-                return <img src={halloweenData.Poster} alt= ""/>
+            {Halloween?.Search?.map((HalloweenData) => {
+                console.log(HalloweenData)
+                return <img src={HalloweenData.Poster} alt= ""/>
             })}
 
         </div>
+        </HalloweenContainer>
     )
 }
-export default Halloween;

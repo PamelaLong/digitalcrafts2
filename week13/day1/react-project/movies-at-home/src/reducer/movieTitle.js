@@ -1,16 +1,20 @@
 const initialState = {
+    Poster: "",
     Title: "",
     Year: "",
-    Rated: "",
-    Released: "",
-    Poster: "",
-    Ratings: "",
     
 
 }
 
-const movieTitle = (state = initialState, action) => {
+function movieTitle(state = initialState, action) {
     switch (action.type) {
+        case "movieTitle":
+            return {
+                Poster: "",
+                Title: "",
+                Year: "",
+            };
+            
         default:
             return state;
     }
