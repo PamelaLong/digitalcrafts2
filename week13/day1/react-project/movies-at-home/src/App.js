@@ -2,8 +2,10 @@ import './App.css';
 // import { useState } from 'react';
 // import { useDispatch } from "react-redux";
 // import Signup from "./components/Signup";
-import Movies from './components/Movies';
+import Halloween from './components/Halloween';
 import Marvel from './components/Marvel';
+import Superman from './components/Superman';
+import Batman from './components/Batman';
 
 export default function App() {
   // const [Signup, setSignup] = useState({});
@@ -14,8 +16,10 @@ export default function App() {
     <div className= "App">
       <h1>Welcome to Movies At Home</h1>
       <h2>Search for Movies Here</h2>
-      <Movies />
+      <Halloween />
       <Marvel />
+      <Superman />
+      <Batman />
 
 
         {/* <Movies MovieTitle={movieTitle}setMovieTitle={setMovieTitle}/> */}
