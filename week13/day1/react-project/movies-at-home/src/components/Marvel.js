@@ -1,5 +1,5 @@
-import React from 'react';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
+import MarvelContainer from 'styled-components';
 const omdbPage = `http://www.omdbapi.com/?s=marvel&apikey=aa7e3de3`;
 
 

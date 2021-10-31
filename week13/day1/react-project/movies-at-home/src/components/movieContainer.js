@@ -1,4 +1,5 @@
 import React from 'react';
+import MovieContainer from 'styled-components';
 // import Movies from "./Movies";
 
 // FIX THE MAPPING AT SOME POINT!!!!

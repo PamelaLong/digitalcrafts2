@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import HalloweenContainer from '../componentStyle/HalloweenStyle';
+import HalloweenContainer from 'styled-components';
 const omdbPage = `http://www.omdbapi.com/?s=halloween&apikey=aa7e3de3`;
 
 

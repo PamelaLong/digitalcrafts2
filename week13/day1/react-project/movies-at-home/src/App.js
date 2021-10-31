@@ -2,11 +2,11 @@ import './App.css';
 import React from 'react';
 // import { useState } from 'react';
 // import { useDispatch } from "react-redux";
+import { MainContainer} from 'styled-components/AppStyle';
 import Halloween from './components/Halloween';
 import Marvel from './components/Marvel';
 import Superman from './components/Superman';
 import Batman from './components/Batman';
-import MainContainer from './componentStyle/AppStyle'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { createStore } from 'redux';
 
@@ -20,15 +20,16 @@ function App() {
   return (
     <Router>
       <Switch>
-      
-      <MainContainer>
+
     <div className= "App">
       <h1>Welcome to Movies At Home</h1>
       <h2>Search for Movies Here</h2>
     </div>
 
+    <MainContainer>
+
       <Route path="/Halloween">
-        <Halloween />
+        <Halloween/>
         </Route>
 
       <Route path="Marvel">
@@ -52,7 +53,7 @@ function App() {
 
 
       {/* <button className="click">Movie Info</button> */}
-    </MainContainer>
+      </MainContainer>
     </Switch>
     </Router>
   )
