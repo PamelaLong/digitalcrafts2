@@ -17,17 +17,20 @@ const omdbPage = `http://www.omdbapi.com/?s=marvel&apikey=aa7e3de3`;
         getMarvel()
     },[])
     return(
-        <MarvelContainer>
+        
         <div>
             <h1>Marvel</h1>
                 
             {marvel?.Search?.map((marvelData) => {
                 console.log(marvelData)
-                return <img src={marvelData.Poster} alt= ""/>
+                return <div>
+                    <img src={marvelData.Poster} alt= ""/>
+                    <button>Add Movie to Cart</button>
+                    </div>
             })}
 
         </div>
-        </MarvelContainer>
+        
     )
 }
 export default Marvel;

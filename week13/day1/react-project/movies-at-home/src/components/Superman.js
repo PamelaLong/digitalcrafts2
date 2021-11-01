@@ -18,17 +18,20 @@ const omdbPage = `http://www.omdbapi.com/?s=superman&apikey=aa7e3de3`;
         getSuperman()
     },[])
     return(
-        <SupermanContainer>
+        
         <div>
             <h1>Superman</h1>
                 
             {superman?.Search?.map((supermanData) => {
                 console.log(supermanData)
-                return <img src={supermanData.Poster} alt= ""/>
+                return <div>
+                <img src={supermanData.Poster} alt= ""/>
+           <button>Add Movie to Cart</button>
+           </div>
             })}
 
         </div>
-        </SupermanContainer>
+        
     )
 }
 export default Superman;

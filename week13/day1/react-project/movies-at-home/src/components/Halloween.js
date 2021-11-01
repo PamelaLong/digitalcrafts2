@@ -18,17 +18,21 @@ useEffect(() => {
         getHalloween()
     },[])
     return(
-        <HalloweenContainer>
+        
         <div>
             <h1>Halloween</h1>
                 
             {halloween?.Search?.map((HalloweenData) => {
                 console.log(HalloweenData)
-                return <img src={HalloweenData.Poster} alt= ""/>
+                
+                return <div>
+                     <img src={HalloweenData.Poster} alt= ""/>
+                <button>Add Movie to Cart</button>
+                </div>
             })}
             
         </div>
-        </HalloweenContainer>
+        
     )
 }
 export default Halloween;

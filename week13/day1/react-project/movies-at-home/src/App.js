@@ -33,15 +33,15 @@ function App() {
         <Halloween/>
         </Route>
 
-      <Route path="Marvel">
+      <Route path="/Marvel">
         <Marvel />
         </Route>
 
-      <Route path="Superman">
+      <Route path="/Superman">
         <Superman />
         </Route>
 
-      <Route path="Batman">
+      <Route path="/Batman">
         <Batman />
         </Route>
 
@@ -51,7 +51,7 @@ function App() {
         <Route path="/errorpage">
           <ErrorPage />
         </Route> */}
-        <button onClick= {() => ADD_MOVIE(dispatch, "Add Movie To Cart")}>Add Movie To Cart</button>
+        {/* <button onClick= {() => ADD_MOVIE(dispatch, "Add Movie To Cart")}>Add Movie To Cart</button> */}
 
       </MainContainer>
     </Switch>
