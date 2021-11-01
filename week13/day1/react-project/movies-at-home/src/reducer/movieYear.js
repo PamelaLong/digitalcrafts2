@@ -1,14 +1,14 @@
 const initialState = {
-    Title: "",
+    Year: "",
     
 
 }
 
-function movieTitle(state = initialState, action) {
+function movieYear(state = initialState, action) {
     switch (action.type) {
-        case "movieTitle":
+        case "movieYear":
             return {
-                Title: "",
+                Year: "",
             };
             
         default:
@@ -16,4 +16,4 @@ function movieTitle(state = initialState, action) {
     }
 }
 
-export default movieTitle;
+export default movieYear;

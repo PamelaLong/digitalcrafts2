@@ -7,6 +7,7 @@ function Signup() {
     const Signup = useState({});
     
     return(
+        <SignupContainer>
         <div>
             <input type="text" onChange={(e) => ({ ...Signup, firstName: e.target.value})} name="firstName" placeholder="First Name" />
             <input type="text" onChange={(e) => ({ ...Signup, lastName: e.target.value})} name="lastName" placeholder="Last Name" />
@@ -20,6 +21,7 @@ function Signup() {
             <input type="button" onClick="button" value="Sign Up" />
             
         </div>
+        </SignupContainer>
     )
 };
 export default Signup;

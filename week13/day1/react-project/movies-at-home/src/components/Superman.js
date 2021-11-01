@@ -18,6 +18,7 @@ const omdbPage = `http://www.omdbapi.com/?s=superman&apikey=aa7e3de3`;
         getSuperman()
     },[])
     return(
+        <SupermanContainer>
         <div>
             <h1>Superman</h1>
                 
@@ -27,6 +28,7 @@ const omdbPage = `http://www.omdbapi.com/?s=superman&apikey=aa7e3de3`;
             })}
 
         </div>
+        </SupermanContainer>
     )
 }
 export default Superman;

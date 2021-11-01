@@ -2,7 +2,7 @@ import './App.css';
 import React from 'react';
 // import { useState } from 'react';
 // import { useDispatch } from "react-redux";
-import { MainContainer} from 'styled-components/AppStyle';
+import { MainContainer } from './styled-components/AppStyle';
 import Halloween from './components/Halloween';
 import Marvel from './components/Marvel';
 import Superman from './components/Superman';
@@ -10,8 +10,8 @@ import Batman from './components/Batman';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { createStore } from 'redux';
 
-// const store = createStore();
-// console.log(store.getState());
+const store = createStore();
+console.log(store.getState());
 
 
 function App() {

@@ -2,9 +2,9 @@ import React from 'react';
 import MovieContainer from 'styled-components';
 // import Movies from "./Movies";
 
-// FIX THE MAPPING AT SOME POINT!!!!
+// DO YOU EVEN STILL NEED THIS?
 
-export default function MovieContainer(props) {
+function MovieContainer(props) {
     // const URL = [`https://www.omdbapi.com/?i=tt3896198&apikey=aa7e3de3`];
 
 
@@ -16,6 +16,7 @@ export default function MovieContainer(props) {
         </div>
     )
 }
+export default MovieContainer;
 // carousel code?
 
 {/* <Carousel

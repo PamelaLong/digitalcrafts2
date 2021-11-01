@@ -17,6 +17,7 @@ const omdbPage = `http://www.omdbapi.com/?s=marvel&apikey=aa7e3de3`;
         getMarvel()
     },[])
     return(
+        <MarvelContainer>
         <div>
             <h1>Marvel</h1>
                 
@@ -26,6 +27,7 @@ const omdbPage = `http://www.omdbapi.com/?s=marvel&apikey=aa7e3de3`;
             })}
 
         </div>
+        </MarvelContainer>
     )
 }
 export default Marvel;
