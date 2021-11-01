@@ -1,13 +1,14 @@
 import './App.css';
 import React from 'react';
 // import { useState } from 'react';
-// import { useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import Halloween from './components/Halloween';
 import Marvel from './components/Marvel';
 import Superman from './components/Superman';
 import Batman from './components/Batman';
 import { MainContainer } from './styled-components/AppStyle';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { ADD_MOVIE } from './redux/action-types/Cart-types';
 // import { createStore } from 'redux';
 
 // const store = createStore();
@@ -15,7 +16,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 
 function App() {
-  // const dispatch = useDispatch();
+  const dispatch = useDispatch();
   // const [movieTitle, setMovieTitle] = useSelector(state => state.movieTitle[props.movieTitle]);
   return (
     <Router>
@@ -50,9 +51,8 @@ function App() {
         <Route path="/errorpage">
           <ErrorPage />
         </Route> */}
+        <button onClick= {() => ADD_MOVIE(dispatch, "Add Movie To Cart")}>Add Movie To Cart</button>
 
-
-      {/* <button className="click">Movie Info</button> */}
       </MainContainer>
     </Switch>
     </Router>
@@ -61,4 +61,3 @@ function App() {
 };
 export default App;
 // add this button to the bottom of the movie posters
-// <button onClick={() => dispatch({type: "movieTitle"})}>Add To Cart</button>

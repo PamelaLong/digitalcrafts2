@@ -1,10 +1,6 @@
-<button onClick= {() => ADD_MOVIE(dispatch, "Add Movie To Cart")}>Add Movie To Cart</button>
 
 import { ADD_MOVIE, DELETE_MOVIE, READ_MOVIE, UPDATE_MOVIE } from "../action-types/Button-types"
 
-// export const ConsoleLogVariable = (name) => {
-//     console.log(name);
-// };
 
 export const AddMovie = (dispatch, message)=> {
     dispatch({type: ADD_MOVIE })
