@@ -1,22 +1,26 @@
-import React, { Dispatch } from "react";
+import { DELETE_MOVIE } from "../redux/action-types/Cart-types";
+import { UPDATE_MOVIE } from "../redux/action-types/Cart-types";
+
+const initialState = [];
+
+const Cart = (state=initialState, action) => {
+    switch(action.type){
+        case DELETE_MOVIE:
+            const originalState = state;
+
+            const newState = [...originalState, {name: "delete movie"}];
+            return newState;
+        
+        case UPDATE_MOVIE:
+                const originalState = state;
+    
+                const newState = [...originalState, {name: "update movie"}];
+                return newState;    
+
+        default:
+            return state;
 
 
-export default function Cart() {
-    const dispatch = useDispatch();
-
-    return (
-        <div className="cart">
-            
-        </div>
-    )
-};
-
-import React from 'react'
-
-export default function cart() {
-    return (
-        <div>
-            
-        </div>
-    )
+        }
 }
+export default Cart;

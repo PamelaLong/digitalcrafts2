@@ -1,17 +1,15 @@
+// import React from 'react'
+// import rootReducer from './reducers/rootReducer';
 import { combineReducers } from "redux";
 import movieTitle from "./movieTitle";
 import moviePoster from "./moviePoster";
 import movieYear from "./movieYear";
 
 
-const rootReducers = combineReducers({
-    movieTitle,
-    moviePoster,
-    movieYear,
+const rootReducer = combineReducers ({
+        movieTitle,
+        moviePoster,
+        movieYear,
 
-
-}
-);
-
-export default rootReducers;
-
+});
+export default rootReducer;

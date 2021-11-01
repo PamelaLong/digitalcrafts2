@@ -8,10 +8,10 @@ import Marvel from './components/Marvel';
 import Superman from './components/Superman';
 import Batman from './components/Batman';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { createStore } from 'redux';
+// import { createStore } from 'redux';
 
-const store = createStore();
-console.log(store.getState());
+// const store = createStore();
+// console.log(store.getState());
 
 
 function App() {
