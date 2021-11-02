@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import BatmanContainer from "styled-components";
 const omdbPage = `http://www.omdbapi.com/?s=batman&apikey=aa7e3de3`;
 
 function Batman() {

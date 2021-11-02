@@ -1,63 +1,62 @@
-import './App.css';
-import React from 'react';
+import "./App.css";
+import React from "react";
 // import { useState } from 'react';
-import { useDispatch } from "react-redux";
-import Halloween from './components/Halloween';
-import Marvel from './components/Marvel';
-import Superman from './components/Superman';
-import Batman from './components/Batman';
-import { MainContainer } from './styled-components/AppStyle';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { ADD_MOVIE } from './redux/action-types/Cart-types';
+// import { useDispatch } from "react-redux";
+import Halloween from "./components/Halloween";
+import Marvel from "./components/Marvel";
+import Superman from "./components/Superman";
+import Batman from "./components/Batman";
+import { MainContainer } from "./styled-components/AppStyle";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
 // import { createStore } from 'redux';
 
 // const store = createStore();
 // console.log(store.getState());
 
-
 function App() {
-  const dispatch = useDispatch();
-  // const [movieTitle, setMovieTitle] = useSelector(state => state.movieTitle[props.movieTitle]);
+  // const dispatch = useDispatch();
+
   return (
     <Router>
-
-    <div className= "App">
-      <h1>Welcome to Movies At Home</h1>
-      <h2>Search for Movies Here</h2>
-    </div>
+      <div className="App">
+        <h1>Welcome to Movies At Home</h1>
+        <h2>Search for Movies Here</h2>
+      </div>
+      <div>
+        <button>Batman Movies</button>
+        <button>Superman Movies</button>
+        <button>Marvel Movies</button>
+        <button>Halloween Movies</button>
+      </div>
       <Switch>
+        <MainContainer>
+          <Route path="/Halloween">
+            <Halloween />
+          </Route>
 
-    <MainContainer>
+          <Route path="/Marvel">
+            <Marvel />
+          </Route>
 
-      <Route path="/Halloween">
-        <Halloween/>
-        </Route>
+          <Route path="/Superman">
+            <Superman />
+          </Route>
 
-      <Route path="/Marvel">
-        <Marvel />
-        </Route>
+          <Route path="/Batman">
+            <Batman />
+          </Route>
 
-      <Route path="/Superman">
-        <Superman />
-        </Route>
-
-      <Route path="/Batman">
-        <Batman />
-        </Route>
-
-{/* <Route path="*">
+          {/* <Route path="*">
           <Redirect to="/errorpage" />
         </Route>
         <Route path="/errorpage">
           <ErrorPage />
         </Route> */}
-        {/* <button onClick= {() => ADD_MOVIE(dispatch, "Add Movie To Cart")}>Add Movie To Cart</button> */}
-
-      </MainContainer>
-    </Switch>
+        </MainContainer>
+      </Switch>
     </Router>
-  )
-
-};
+  );
+}
 export default App;
 // add this button to the bottom of the movie posters

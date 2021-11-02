@@ -1,8 +1,25 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const MainContainer = styled.div`
-display: flex;
+  background-color: orangered;
+`;
 
+export const BatmanContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
 
-`
+export const HalloweenContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
 
+export const MarvelContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
+
+export const SupermanContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
