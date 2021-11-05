@@ -8,6 +8,7 @@ import Superman from "./components/Superman";
 import Batman from "./components/Batman";
 import { MainContainer } from "./styled-components/AppStyle";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BatmanContainer } from "./styled-components/BatmanStyle";
 
 // import { createStore } from 'redux';
 
@@ -23,7 +24,7 @@ function App() {
         <h1>Welcome to Movies At Home</h1>
         <h2>Search for Movies Here</h2>
       </div>
-      <div>
+      <div className="Button">
         <button>Batman Movies</button>
         <button>Superman Movies</button>
         <button>Marvel Movies</button>
@@ -47,6 +48,9 @@ function App() {
             <Batman />
           </Route>
 
+          <Route path="/BatmanContainer">
+            <BatmanContainer />
+          </Route>
           {/* <Route path="*">
           <Redirect to="/errorpage" />
         </Route>

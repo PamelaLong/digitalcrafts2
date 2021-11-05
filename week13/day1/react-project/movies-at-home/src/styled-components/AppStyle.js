@@ -5,8 +5,7 @@ export const MainContainer = styled.div`
 `;
 
 export const BatmanContainer = styled.div`
-  display: flex;
-  flex-direction: row;
+  background-color: gray;
 `;
 
 export const HalloweenContainer = styled.div`
